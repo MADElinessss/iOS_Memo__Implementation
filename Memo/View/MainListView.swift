@@ -20,8 +20,12 @@ struct MainListView: View {
     var body: some View {
         NavigationView{
             List(store.list){ memo in
-                //(alignment: .leading : 왼쪽으로 정렬
-                MemoCell(memo: memo)
+                NavigationLink{
+                    DetailView(memo: memo)
+                } label: {
+                    //(alignment: .leading : 왼쪽으로 정렬
+                    MemoCell(memo: memo)
+                }
             }//modifier <= method
             .navigationTitle("My Memo")
             .listStyle(.plain)//라운드 효과x
@@ -33,10 +37,12 @@ struct MainListView: View {
                 }
             }
             // $ => binding
-            .sheet(isPresented: $showComposer){
-                //showComposer가 true 일 때 실행됨
-                ComposeView() // Modal
-            }
+//            .sheet(isPresented: $showComposer){
+//                //showComposer가 true 일 때 실행됨
+//                ComposeView() // Modal
+//            }
+            //탭 -> 푸시 방식으로 표시
+            
         }
     }
 }

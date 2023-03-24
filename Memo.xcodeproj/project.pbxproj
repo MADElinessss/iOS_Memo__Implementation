@@ -17,6 +17,7 @@
 		575B1F6729CDC709006B15CB /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6629CDC709006B15CB /* MemoStore.swift */; };
 		575B1F6A29CDCE5E006B15CB /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6929CDCE5E006B15CB /* MemoCell.swift */; };
 		575B1F6C29CDCF19006B15CB /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6B29CDCF19006B15CB /* ComposeView.swift */; };
+		575B1F6E29CDD1F1006B15CB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6D29CDD1F1006B15CB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		575B1F6629CDC709006B15CB /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		575B1F6929CDCE5E006B15CB /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		575B1F6B29CDCF19006B15CB /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		575B1F6D29CDD1F1006B15CB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				575B1F6029CDC586006B15CB /* MainListView.swift */,
 				575B1F6929CDCE5E006B15CB /* MemoCell.swift */,
 				575B1F6B29CDCF19006B15CB /* ComposeView.swift */,
+				575B1F6D29CDD1F1006B15CB /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				575B1F6A29CDCE5E006B15CB /* MemoCell.swift in Sources */,
+				575B1F6E29CDD1F1006B15CB /* DetailView.swift in Sources */,
 				575B1F4D29CDC4FE006B15CB /* MemoApp.swift in Sources */,
 				575B1F6729CDC709006B15CB /* MemoStore.swift in Sources */,
 				575B1F6529CDC665006B15CB /* MemoMemory.swift in Sources */,
