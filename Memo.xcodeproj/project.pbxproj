@@ -15,6 +15,7 @@
 		575B1F6129CDC586006B15CB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6029CDC586006B15CB /* MainListView.swift */; };
 		575B1F6529CDC665006B15CB /* MemoMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6429CDC665006B15CB /* MemoMemory.swift */; };
 		575B1F6729CDC709006B15CB /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6629CDC709006B15CB /* MemoStore.swift */; };
+		575B1F6A29CDCE5E006B15CB /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6929CDCE5E006B15CB /* MemoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		575B1F6029CDC586006B15CB /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		575B1F6429CDC665006B15CB /* MemoMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoMemory.swift; sourceTree = "<group>"; };
 		575B1F6629CDC709006B15CB /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		575B1F6929CDCE5E006B15CB /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		575B1F4B29CDC4FE006B15CB /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				575B1F6829CDCE50006B15CB /* View */,
 				575B1F6329CDC5B5006B15CB /* Memory */,
 				575B1F6229CDC5A8006B15CB /* CoreData */,
 				575B1F4C29CDC4FE006B15CB /* MemoApp.swift */,
@@ -95,6 +98,14 @@
 				575B1F6629CDC709006B15CB /* MemoStore.swift */,
 			);
 			path = Memory;
+			sourceTree = "<group>";
+		};
+		575B1F6829CDCE50006B15CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				575B1F6929CDCE5E006B15CB /* MemoCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575B1F6A29CDCE5E006B15CB /* MemoCell.swift in Sources */,
 				575B1F4D29CDC4FE006B15CB /* MemoApp.swift in Sources */,
 				575B1F6729CDC709006B15CB /* MemoStore.swift in Sources */,
 				575B1F6529CDC665006B15CB /* MemoMemory.swift in Sources */,
