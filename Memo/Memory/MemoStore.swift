@@ -6,15 +6,15 @@
 //
 
 import Foundation
-
+import SwiftUI
 //메모 목록 저장하는 클래스
 
-class MemoStore : ObservedObject{
+class MemoStore : ObservableObject{
     @Published var list : [MemoMemory] // auto update
     init(){
         list = [
-            MemoMemory(content: "Hi Hello", insertDate: Date.now)
-            MemoMemory(content: "So good to see you", insertDate: Date.now)
+            MemoMemory(content: "Hi Hello", insertDate: Date.now),
+            MemoMemory(content: "So good to see you", insertDate: Date.now),
             MemoMemory(content: "And bye", insertDate: Date.now)
         
         ]

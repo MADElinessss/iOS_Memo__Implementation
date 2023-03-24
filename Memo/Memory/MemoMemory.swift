@@ -10,7 +10,7 @@ import SwiftUI
 
 //identifiable: data -> list binding
 //obser: memo edit, auto update
-class MemoMemory : Identifiable, ObservedObject{
+class MemoMemory : Identifiable, ObservableObject{
     let id : UUID
     @Published var content : String
     //Published : 새로운 메모 추가할때마다 binding ui update
