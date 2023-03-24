@@ -10,9 +10,9 @@
 		575B1F4D29CDC4FE006B15CB /* MemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F4C29CDC4FE006B15CB /* MemoApp.swift */; };
 		575B1F4F29CDC4FE006B15CB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F4E29CDC4FE006B15CB /* Persistence.swift */; };
 		575B1F5229CDC4FE006B15CB /* Memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F5029CDC4FE006B15CB /* Memo.xcdatamodeld */; };
-		575B1F5429CDC4FE006B15CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F5329CDC4FE006B15CB /* ContentView.swift */; };
 		575B1F5629CDC4FF006B15CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575B1F5529CDC4FF006B15CB /* Assets.xcassets */; };
 		575B1F5A29CDC4FF006B15CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575B1F5929CDC4FF006B15CB /* Preview Assets.xcassets */; };
+		575B1F6129CDC586006B15CB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B1F6029CDC586006B15CB /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		575B1F4C29CDC4FE006B15CB /* MemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoApp.swift; sourceTree = "<group>"; };
 		575B1F4E29CDC4FE006B15CB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		575B1F5129CDC4FE006B15CB /* Memo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memo.xcdatamodel; sourceTree = "<group>"; };
-		575B1F5329CDC4FE006B15CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		575B1F5529CDC4FF006B15CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		575B1F5729CDC4FF006B15CB /* Memo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Memo.entitlements; sourceTree = "<group>"; };
 		575B1F5929CDC4FF006B15CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		575B1F6029CDC586006B15CB /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 		575B1F4B29CDC4FE006B15CB /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				575B1F6329CDC5B5006B15CB /* Memory */,
+				575B1F6229CDC5A8006B15CB /* CoreData */,
 				575B1F4C29CDC4FE006B15CB /* MemoApp.swift */,
-				575B1F4E29CDC4FE006B15CB /* Persistence.swift */,
-				575B1F5329CDC4FE006B15CB /* ContentView.swift */,
+				575B1F6029CDC586006B15CB /* MainListView.swift */,
 				575B1F5529CDC4FF006B15CB /* Assets.xcassets */,
 				575B1F5729CDC4FF006B15CB /* Memo.entitlements */,
-				575B1F5029CDC4FE006B15CB /* Memo.xcdatamodeld */,
 				575B1F5829CDC4FF006B15CB /* Preview Content */,
 			);
 			path = Memo;
@@ -73,6 +73,22 @@
 				575B1F5929CDC4FF006B15CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		575B1F6229CDC5A8006B15CB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				575B1F4E29CDC4FE006B15CB /* Persistence.swift */,
+				575B1F5029CDC4FE006B15CB /* Memo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		575B1F6329CDC5B5006B15CB /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				575B1F4D29CDC4FE006B15CB /* MemoApp.swift in Sources */,
+				575B1F6129CDC586006B15CB /* MainListView.swift in Sources */,
 				575B1F5229CDC4FE006B15CB /* Memo.xcdatamodeld in Sources */,
-				575B1F5429CDC4FE006B15CB /* ContentView.swift in Sources */,
 				575B1F4F29CDC4FE006B15CB /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
