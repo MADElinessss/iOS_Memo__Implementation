@@ -12,6 +12,7 @@ struct MainListView: View {
     //하나의 데이터를 여러 뷰에서 공유하고 싶을 때
     @EnvironmentObject var store : MemoStore
     
+    @State private var showComposer : Bool = false
     /*
      View 는 가능한 잘게 쪼개는 것이 좋다 !
      shift + commmand + A
@@ -24,6 +25,18 @@ struct MainListView: View {
             }//modifier <= method
             .navigationTitle("My Memo")
             .listStyle(.plain)//라운드 효과x
+            .toolbar{
+                Button{//default : right side
+                    showComposer = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            // $ => binding
+            .sheet(isPresented: $showComposer){
+                //showComposer가 true 일 때 실행됨
+                ComposeView() // Modal
+            }
         }
     }
 }
